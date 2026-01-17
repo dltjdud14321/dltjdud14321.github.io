@@ -1,34 +1,49 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>코딩 공부 시작!</title>
+    <title>나의 멋진 프로필</title>
     <style>
         body {
-            background-color: #f0f8ff;
-            color: yellow;
+            background-color: #f4f7f6;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 50px;
+        }
+        .profile-card {
+            background-color: white;
+            padding: 30px;
+            border-radius; 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
             text-align: center;
-            font-family: "Malgun Gothic", sans-serif;
+            width: 300px;
         }
-        h1 {
-            color: red;
-            margin-top: 50px;
+        img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fix: cover;
         }
-        button {
-            background-color: green;
-            color: blue;
+        .btn {
+            display: inline-block;
+            background-color: #3498db;
+            color: white;
+            padding: 10px 20px;
+            text-decortaion: none;
+            border-radius: 5px;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
-    <h1>안녕하세요, 제 첫 코딩 페이지입니다!</h1>
-    <p>지금은 HTML을 배우고 있어요.</p>
 
-    <button onclick = "sayHello()">클릭해보세요!</button>
-
-    <script>
-        function sayHello() {
-            alert("이서영");
-        }
-    </script>
+    <div class = "profile-card">
+        <img src = "https://placehold.jp/150x150.png" alt = "프로필 사진">
+        <h1>홍길동</h1>
+        <p>안녕하세요! 코딩 공부를 시작한 초보 개발자입니다. 반갑습니다!</p>
+        <a href = "https://github.com" class = "btn">나의 깃허브 방문하기</a>
+    </div>
+        
 </body>
 </html>
